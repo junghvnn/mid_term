@@ -138,12 +138,12 @@ body {
 
 /* 사람 위치 */
 .card-a .people-first {
-  width: 95px;
+  width: 100px;
   left: -15px;
   top: 40%;
 }
 .card-a .people-second {
-  width: 95px;
+  width: 100px;
   right: 15px;
   bottom: -12px;
 }
@@ -153,12 +153,12 @@ body {
   top: 55%;
 }
 .card-b .people-second {
-  width: 105px;
+  width: 115px;
   right: 0px;
   bottom: -20px;
 }
 .card-c .people-first {
-  width: 110px;
+  width: 120px;
   left: -20px;
   top: 30%;
 }
