@@ -109,6 +109,7 @@ body {
 .card.is-paused {
   animation-play-state: paused;
 }
+
 /* 카드 이미지 */
 .card-image {
   display: block;
@@ -116,12 +117,6 @@ body {
   height: auto;
 }
 
-/* 카드와 사람을 하나의 그룹으로 묶어서 함께 이동 */
-.card-image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
 
 /* 사람 기본 상태 */
 .people {
