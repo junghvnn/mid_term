@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  background-color: #b5b5b5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 포스터 전체 크기와 배치의 기준 */
+.poster {
+  position: relative;
+  width: 600px;
+  height: 839px;
+  margin: 30px auto;
+  overflow: hidden;
+}
+
+/* 배경 */
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: 839px;
+  z-index: 0;
+}
+
+/* 카드 공통 */
+.card {
+  position: absolute;
+  display: block;
+  height: auto;
+}
+
+.card-a {
+  width: 319px;
+  top: -1px;
+  left: 313px;
+  z-index: 2;
+
+  animation: move-a 11s ease-in-out infinite;
+}
+
+.card-b {
+  width: 421px;
+  top: 187px;
+  left: 17px;
+  z-index: 3;
+
+  animation: move-b 7s ease-in-out infinite;
+}
+
+.card-c {
+  width: 484px;
+  top: 484px;
+  left: 268px;
+  z-index: 4;
+
+  animation: move-c 15s ease-in-out infinite;
+}
+
+/* 카드 움직임 */
+@keyframes move-a {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(100px, 69.399px);
+  }
+
+  75% {
+    transform: translate(-100px, -69.399px);
+  }
+}
+
+@keyframes move-b {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  /* 왼쪽 위로 이동 */
+  25% {
+    transform: translate(-80px, -55.519px);
+  }
+
+  /* 오른쪽 아래로 이동 */
+  75% {
+    transform: translate(80px, 55.519px);
+  }
+}
+
+@keyframes move-c {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(60px, 41.639px);
+  }
+
+  75% {
+    transform: translate(-60px, -41.639px);
+  }
+}
+
+/* 카드 움직임 정지 */
+.card.is-paused {
+  animation-play-state: paused;
+}
+/* 카드 이미지 */
+.card-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 카드와 사람을 하나의 그룹으로 묶어서 함께 이동 */
+.card-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 사람 기본 상태 */
+.people {
+  position: absolute;
+  display: block;
+
+  height: auto;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  /* 사람이 마우스를 가로채지 않도록 해요. */
+  pointer-events: none;
+}
+
+/* 커서 -> 사람 */
+.card.is-paused .people {
+  opacity: 1;
+}
+
+/* 사람 위치 */
+.card-a .people-first {
+  width: 90px;
+  left: -15px;
+  top: 40%;
+}
+.card-a .people-second {
+  width: 110px;
+  right: 15px;
+  bottom: -12px;
+}
+.card-b .people-first {
+  width: 140px;
+  left: 0px;
+  top: 55%;
+}
+.card-b .people-second {
+  width: 100px;
+  right: 0px;
+  bottom: -20px;
+}
+.card-c .people-first {
+  width: 90px;
+  left: -20px;
+  top: 30%;
+}
+.card-c .people-second {
+  width: 100px;
+  right: -100px;
+  bottom: 70%;
+}
