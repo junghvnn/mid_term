@@ -138,27 +138,27 @@ body {
 
 /* 사람 위치 */
 .card-a .people-first {
-  width: 90px;
+  width: 95px;
   left: -15px;
   top: 40%;
 }
 .card-a .people-second {
-  width: 110px;
+  width: 95px;
   right: 15px;
   bottom: -12px;
 }
 .card-b .people-first {
-  width: 140px;
+  width: 150px;
   left: 0px;
   top: 55%;
 }
 .card-b .people-second {
-  width: 100px;
+  width: 120px;
   right: 0px;
   bottom: -20px;
 }
 .card-c .people-first {
-  width: 90px;
+  width: 130px;
   left: -20px;
   top: 30%;
 }
