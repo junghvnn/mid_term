@@ -36,7 +36,7 @@ body {
   left: 313px;
   z-index: 2;
 
-  animation: move-a 13s ease-in-out infinite;
+  animation: move-a 12s ease-in-out infinite;
 }
 
 .card-b {
@@ -54,7 +54,7 @@ body {
   left: 268px;
   z-index: 4;
 
-  animation: move-c 15s ease-in-out infinite;
+  animation: move-c 13s ease-in-out infinite;
 }
 
 /* 카드 움직임 */
